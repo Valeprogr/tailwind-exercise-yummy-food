@@ -7,9 +7,9 @@ const Home = () => {
         <div className='text-gray-600 font-body'>
             <Navbar />
             <main className='px-16 py-6'>
-                <div>
+                <div className='flex justify-end'>
                     <a href='#' className='text-primary'>Log in</a>
-                    <a href='#' className='text-primary'>Sign up</a>
+                    <a href='#' className='text-primary ml-6'>Sign up</a>
                 </div>
                 <header>
                     <h2 className='text-gray-700 text-6xl font-semibold'>Recipes</h2>
@@ -27,7 +27,7 @@ const Home = () => {
                         {/**Qua verranno importate le cards */}
                     </div>
 
-                    <div>
+                    <div className='flex justify-center'>
                         <div className='bg-secondary-100 text-secondary-200'>Load more</div>
                     </div>
                 </div>
