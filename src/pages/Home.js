@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className='text-gray-600 font-body'>
             <Navbar />
-            <main className='px-16 py-6'>
+            <main className='px-16 py-6 bg-gray-100'>
                 <div className='flex justify-center md:justify-end'>
                     <a href='#' className='text-primary'>Log in</a>
                     <a href='#' className='text-primary ml-6'>Sign up</a>
