@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 
 const Home = () => {
     return (
-        <div className='text-gray-600'>
+        <div className='text-gray-600 font-body'>
             <Navbar />
             <main className='px-16 py-6'>
                 <div>
