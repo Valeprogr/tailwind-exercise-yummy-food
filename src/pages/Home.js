@@ -7,7 +7,7 @@ const Home = () => {
         <div className='text-gray-600 font-body'>
             <Navbar />
             <main className='px-16 py-6'>
-                <div className='flex justify-end'>
+                <div className='flex justify-center md:justify-end'>
                     <a href='#' className='text-primary'>Log in</a>
                     <a href='#' className='text-primary ml-6'>Sign up</a>
                 </div>
