@@ -4,12 +4,12 @@ import Navbar from '../components/Navbar';
 
 const Home = () => {
     return (
-        <div className='text-gray-600 font-body'>
+        <div className='text-gray-600 font-body grid md:grid-cols-3'>
             <Navbar />
-            <main className='px-16 py-6 bg-gray-100'>
+            <main className='px-16 py-6 bg-gray-100 md:col-span-2'>
                 <div className='flex justify-center md:justify-end'>
-                    <a href='#' className='text-primary'>Log in</a>
-                    <a href='#' className='text-primary ml-6'>Sign up</a>
+                    <a href='#' className='text-primary btn border-primary md:border-2'>Log in</a>
+                    <a href='#' className='text-primary ml-2 btn border-primary md:border-2'>Sign up</a>
                 </div>
                 <header>
                     <h2 className='text-gray-700 text-6xl font-semibold'>Recipes</h2>
@@ -18,7 +18,7 @@ const Home = () => {
 
                 <div>
                     <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>Latest Recipes</h4>
-                    <div className='mt-8'>
+                    <div className='mt-8 grid lg:grid-cols-3 gap-10'>
                         {/**Qua verranno importate  le cards */}
                         <Card />
                     </div>
@@ -28,7 +28,7 @@ const Home = () => {
                     </div>
 
                     <div className='flex justify-center'>
-                        <div className='bg-secondary-100 text-secondary-200'>Load more</div>
+                        <div className='bg-secondary-100 text-secondary-200 btn '>Load more</div>
                     </div>
                 </div>
             </main>

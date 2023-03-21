@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='md:col-span-1'>
             <div>
                 <nav>
                     <div>
