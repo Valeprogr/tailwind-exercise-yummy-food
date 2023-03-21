@@ -9,8 +9,8 @@ const Home = () => {
             <Navbar />
             <main className='px-16 py-6 bg-gray-100 md:col-span-2'>
                 <div className='flex justify-center md:justify-end'>
-                    <a href='#' className='text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Log in</a>
-                    <a href='#' className='text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Sign up</a>
+                    <a href='/login' className='text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Log in</a>
+                    <a href='/signup' className='text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Sign up</a>
                 </div>
                 <header>
                     <h2 className='text-gray-700 text-6xl font-semibold'>Recipes</h2>
