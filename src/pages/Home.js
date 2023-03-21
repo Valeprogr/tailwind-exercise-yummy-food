@@ -1,8 +1,9 @@
 import React from 'react';
 import Card from '../components/Card';
 import Navbar from '../components/Navbar';
-
+import data from '../data/data.json';
 const Home = () => {
+
     return (
         <div className='text-gray-600 font-body grid md:grid-cols-3'>
             <Navbar />
@@ -20,7 +21,8 @@ const Home = () => {
                     <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>Latest Recipes</h4>
                     <div className='mt-8 grid lg:grid-cols-3 gap-10'>
                         {/**Qua verranno importate  le cards */}
-                        <Card />
+                        {data.recipe.map(ele => <Card props={ele} />)}
+                        
                     </div>
                     <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>Most Popular</h4>
                     <div className='mt-8'>

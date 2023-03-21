@@ -1,0 +1,40 @@
+{
+    "recipe":[
+        {
+            "name":"Mango salsa chicken",
+            "img": "./images/mango-salsa-chicken.jpeg",
+            "author": "Recipe by CleanFoodCrush via Pinterest",
+            "time": 20
+        },
+        {
+            "name":"Cherry Cupcakes",
+            "img": "./images/cupcakes.jpeg",
+            "author": "Recipe by CleanFoodCrush via Pinterest",
+            "time": 30
+        },
+        {
+            "name":"Falafel",
+            "img": "./images/falafel.jpeg",
+            "author": "Recipe by CleanFoodCrush via Pinterest",
+            "time": 50
+        },
+        {
+            "name":"Gyoza",
+            "img": "./images/gyoza.jpeg",
+            "author": "Recipe by CleanFoodCrush via Pinterest",
+            "time": "1h"
+        },
+        {
+            "name":"Chicken Burrito",
+            "img": "./images/chicken-burrito.jpeg",
+            "author": "Recipe by CleanFoodCrush via Pinterest",
+            "time": 40
+        },
+        {
+            "name":"Beetroot soup",
+            "img": "./images/rotebete-suppe.jpeg",
+            "author": "Recipe by CleanFoodCrush via Pinterest",
+            "time": 35
+        }
+    ]
+}
