@@ -8,8 +8,8 @@ const Home = () => {
             <Navbar />
             <main className='px-16 py-6 bg-gray-100 md:col-span-2'>
                 <div className='flex justify-center md:justify-end'>
-                    <a href='#' className='text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white'>Log in</a>
-                    <a href='#' className='text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white'>Sign up</a>
+                    <a href='#' className='text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Log in</a>
+                    <a href='#' className='text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Sign up</a>
                 </div>
                 <header>
                     <h2 className='text-gray-700 text-6xl font-semibold'>Recipes</h2>
@@ -28,7 +28,7 @@ const Home = () => {
                     </div>
 
                     <div className='flex justify-center'>
-                        <div className='bg-secondary-100 text-secondary-200 btn hover:shadow-inner'>Load more</div>
+                        <div className='bg-secondary-100 text-secondary-200 btn hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300'>Load more</div>
                     </div>
                 </div>
             </main>
