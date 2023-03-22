@@ -5,9 +5,9 @@ import data from '../data/data.json';
 const Home = () => {
 
     return (
-        <div className='text-gray-600 font-body grid md:grid-cols-5'>
+        <div className='text-gray-600 font-body grid md:grid-cols-6'>
             <Navbar />
-            <main className='px-16 py-6 bg-gray-100 md:col-span-4'>
+            <main className='px-16 py-6 bg-gray-100 md:col-span-5'>
                 <div className='flex justify-center md:justify-end'>
                     <a href='/login' className='text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Log in</a>
                     <a href='/signup' className='text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Sign up</a>
