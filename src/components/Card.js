@@ -3,7 +3,7 @@ const Card = ({props}) => {
     
     return (
         <>
-            <div className='card hover:shadow-lg'>
+            <div className='card hover:shadow-lg cursor-pointer'>
             <img src={props.img} alt='recipe' className='w-full h-32 sm:h-48 object-cover'></img>
             <div className='m-4'>
                     <span className='font-bold'>{ props.name}</span>
