@@ -2,7 +2,7 @@ import React from 'react';
 
 const Signup = () => {
     return (
-        <div>
+        <div className='text-gray-600 font-body bg-gray-100'>
             <h1>Hi im Sign up componet</h1>
         </div>
     );
