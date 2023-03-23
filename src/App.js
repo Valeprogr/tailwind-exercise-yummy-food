@@ -4,6 +4,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import FavoriteRecipe from './pages/FavoriteRecipe';
 function App() {
   return (
     <>
@@ -13,7 +14,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path='/login' element={<Login />} />
         <Route path="/signup" element={<Signup />} /> 
-        
+        <Route path="/favorites" element={<FavoriteRecipe />} />
       </Routes>
      
  </>

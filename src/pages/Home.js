@@ -24,13 +24,16 @@ const Home = () => {
                         {data.recipe.map(ele => <Card props={ele} />)}
                         
                     </div>
-                    <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>Most Popular</h4>
+                    <h4 className='font-bold mt-12 pb-2 border-b border-gray-200 text-center'>List of your favorite Recipe</h4>
                     <div className='mt-8'>
                         {/**Qua verranno importate le cards */}
                     </div>
 
                     <div className='flex justify-center'>
-                        <div className='bg-secondary-100 text-secondary-200 btn hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300'>Load more</div>
+                        <a href='/favorites'>
+                        <div className='bg-secondary-100 text-secondary-200 btn hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300'>Favorite Recipe</div>
+                        </a>
+                        
                     </div>
                 </div>
             </main>
