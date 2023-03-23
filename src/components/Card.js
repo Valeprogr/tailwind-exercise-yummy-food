@@ -15,7 +15,11 @@ const Card = ({props}) => {
 </svg>
 
                     <span className='ml-1'>{ props.time}</span>
-            </div>
+                </div>
+                <div className='flex justify-center mb-5'>
+                <div className='bg-secondary-100 text-secondary-200 btn hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300 w-36 text-center'>Save</div>
+                </div>
+                
         </div>
         </>
     );
