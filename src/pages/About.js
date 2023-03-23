@@ -7,9 +7,9 @@ const About = () => {
                 <p className='text-6xl font-bold'>About Us</p>
                 <p className='text-md uppercase'>Healthy cousine Blog</p>
             </div>
-            <div className='md:grid grid-cols-2 md:pr-4 md:pl-4 bg-white rounded h-auto '>
+            <div className='md:grid grid-cols-2  bg-white rounded h-auto '>
                 <div className='flex items-center'>
-                    <img src='./images/about.jpeg' alt='fresh products' className='object-cover w-screen lg:max-w-auto lg:max-h-[600px]'></img>
+                    <img src='./images/about.jpeg' alt='fresh products' className='object-cover w-screen lg:max-w-auto lg:h-[800px]'></img>
                 </div>
                 <div className='my-24 lg:my-52 mx-7 text-center block w-auto items-center  lg:text-xl'>
                     <p >
