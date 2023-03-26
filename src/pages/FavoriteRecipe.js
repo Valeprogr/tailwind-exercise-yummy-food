@@ -1,4 +1,5 @@
 import React,{useEffect,useState} from 'react';
+import Spinner from '../components/Spinner';
 
 const FavoriteRecipe = () => {
     const [favoriteRecipes, setFavoriteRecipes] = useState();
@@ -31,13 +32,11 @@ const FavoriteRecipe = () => {
                             </div>
                         </div>
                     ))
-                    :
-                    <p>Loading...</p>
+                        :
+                        
+                        <Spinner />       
                 }
-                </div>
-            
-           
-            
+                </div>    
         </div>
     );
 }
