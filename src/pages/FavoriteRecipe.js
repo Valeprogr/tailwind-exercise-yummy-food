@@ -2,12 +2,25 @@ import React,{useEffect,useState} from 'react';
 import Spinner from '../components/Spinner';
 
 const FavoriteRecipe = () => {
-    const [favoriteRecipes, setFavoriteRecipes] = useState();
+    const [favoriteRecipes, setFavoriteRecipes] = useState([]);
+    
+
+    
     useEffect(() => {
         const data = localStorage.getItem('recipe');
         const recipes = JSON.parse(data);
-      setFavoriteRecipes(recipes)
+        setFavoriteRecipes(recipes);
+        
     }, []);
+
+    const removeHandler = (index) => {
+        const data =  JSON.parse(localStorage.getItem('recipe'));
+        data.splice(index,1)
+        console.log(data)
+        localStorage.setItem("recipe", JSON.stringify(data));
+        window.location.reload(true)
+
+    }
 
     return (
         <div className='text-gray-600 font-body bg-gray-100 flex flex-col max-h-full md:items-center px-3' >
@@ -28,7 +41,21 @@ const FavoriteRecipe = () => {
                                     <p className='font-semibold'>Prep time:</p>
                                     <p className='ml-3 font-thin'>{ele.time}</p>
                                 </div>
-                            
+                                <div className='flex justify-center mt-3'>
+                        <button
+                            type='button'
+                            className='
+                            bg-secondary-100 
+                            text-secondary-200
+                            btn hover:shadow-inner
+                            transform hover:scale-125
+                            hover:bg-opacity-50 transition
+                            ease-out duration-300 w-36
+                            text-center'
+                           
+                            onClick={() => removeHandler(index)}
+                        >Remove</button>
+                    </div>
                             </div>
                         </div>
                     ))
