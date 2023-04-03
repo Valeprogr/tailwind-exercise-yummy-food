@@ -1,6 +1,7 @@
 # Yummy-Food
 
-<img width="1430" alt="Schermata 2023-04-03 alle 23 35 25" src="https://user-images.githubusercontent.com/96908140/229633772-e5dae015-9c82-4ce1-8b25-dff0c36ba30f.png">
+<img width="1048" alt="Schermata 2023-04-03 alle 23 50 19" src="https://user-images.githubusercontent.com/96908140/229635354-366cc44c-b44b-4b03-8308-48c98338ef5a.png">
+
 
 ## Description
 Yummi Food is a very stylish cookbook where you can save your favorite recipes to your personalized list.
