@@ -12,7 +12,7 @@ export const AppProvider = ({ children }) => {
     const esempio = () => {
         const data = localStorage.getItem('recipe');
         const result = JSON.parse(data);
-        console.log(result)
+        //console.log(result)
         if (result === null) {
            localStorage.setItem("recipe", JSON.stringify(recipeData));
         } else {
@@ -27,7 +27,7 @@ export const AppProvider = ({ children }) => {
     const updateState = (recipe) => {
         const data =  JSON.parse(localStorage.getItem('recipe'));
          data.push(recipe)
-         console.log(data)
+         //console.log(data)
         localStorage.setItem("recipe", JSON.stringify(data)); 
     }
 

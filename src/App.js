@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import FavoriteRecipe from './pages/FavoriteRecipe';
+import Recipe from './pages/Recipe';
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path="/signup" element={<Signup />} /> 
         <Route path="/favorites" element={<FavoriteRecipe />} />
+        <Route path='/recipe/:id' element={<Recipe />} />
       </Routes>
      
  </>

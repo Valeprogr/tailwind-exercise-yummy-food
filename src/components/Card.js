@@ -1,10 +1,14 @@
 import React from 'react';
 import { useAppContext } from '../context';
 
+
 const Card = ({ props, index }) => {
-    const {recipeData, setRecipeData, esempio, updateState} = useAppContext();
+    const { recipeData, setRecipeData, esempio, updateState } = useAppContext();
+    
+
         return (
             <>
+                <a href={`/recipe/${index}`}>
                 <div index={index} className='card hover:shadow-lg cursor-pointer'>
                     <img src={props.img} alt='recipe' className='w-full  h-32 sm:h-48 object-cover'></img>
                     <div className='m-4'>
@@ -38,7 +42,8 @@ const Card = ({ props, index }) => {
                         >Save</button>
                     </div>
     
-                </div>
+                </div>                    
+                </a>
             </>
         );
     }
