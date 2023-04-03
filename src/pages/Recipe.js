@@ -7,8 +7,8 @@ const Recipe = () => {
      const [recipe, setRecipe] = useState(data.recipe[id]);
     //console.log(recipe)
     return (
-        <div className='flex h-screen bg-gray-100 md:p-12 lg:p-12'>
-            <div className='h-auto w-full bg-white p-3 md:p-20 rounded'>
+        <div className='flex h-auto bg-gray-100 md:p-12 lg:p-12'>
+            <div className=' h-auto w-full bg-white p-3 md:p-20 rounded'>
             <div className='flex justify-end pr-8 mb-8'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 mr-4">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />

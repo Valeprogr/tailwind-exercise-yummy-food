@@ -27,7 +27,7 @@ const FavoriteRecipe = () => {
             <div className='relative'>
             {
                 recipeData ? 
-                    recipeData.map((ele,index,) => (
+                    recipeData.map((ele,index) => (
                         <a href={`/recipe/${index}`}>
                         <div key={index} className='flex  mt-12 mb-2 bg-white border h-auto w-auto p-4 rounded shadow'>
                             <img className='absolute  rounded-full h-32 w-32  object-cover ' src={ele.img} alt="food" />    
