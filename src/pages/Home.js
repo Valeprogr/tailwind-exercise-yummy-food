@@ -2,42 +2,10 @@ import React,{useState, useCallback,useEffect} from 'react';
 import Card from '../components/Card';
 import Navbar from '../components/Navbar';
 import data from '../data/data.json';
+import { useAppContext } from '../context';
 const Home = () => {
-    const [recipeData, setRecipeData] = useState([]);
+    const {recipeData, setRecipeData, esempio, updateState } = useAppContext();
 
-    const esempio = () => {
-    const data = localStorage.getItem('recipe');
-        const result = JSON.parse(data)
-        if (result === null) {
-            localStorage.setItem("recipe", JSON.stringify(recipeData));
-        }
-        console.log(localStorage.getItem('recipe'))
-       
-    }
-
-    // useEffect(() => {
-    //     esempio();
-    //     console.log(recipeData)
-    // },[])
-
-
-    const updateState = useCallback(recipe => {
-        console.log(recipe)
-        //setRecipeData(prev => [...prev, recipe]);
-        //console.log(recipeData.length)
-        const data = localStorage.getItem('recipe');
-        const result = JSON.parse(data);
-        console.log(result.length)
-        if (result.length !==  0) {
-        setRecipeData(prev => [...prev, recipe]);
-        console.log(recipeData)
-        localStorage.setItem("recipe", JSON.stringify(recipeData));
-        console.log("add")
-        } else {
-            localStorage.setItem("recipe", JSON.stringify(recipe));
-        }
-       
-    }, [recipeData])
 
     return (
         <div className='text-gray-600 font-body grid md:grid-cols-6'>
@@ -53,11 +21,10 @@ const Home = () => {
                 </header>
 
                 <div>
-                    <button onClick={esempio}>check</button>
                     <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>Latest Recipes</h4>
                     <div className='mt-8 grid lg:grid-cols-3 gap-10'>
                         {/**Qua verranno importate  le cards */}
-                        {data.recipe.map((ele, index) => <Card props={ele} index={index} clickHandler={updateState} />)}
+                        {data.recipe.map((ele, index) => <Card props={ele} index={index}   />)}
                         
                     </div>
                     <h4 className='font-bold mt-12 pb-2 border-b border-gray-200 text-center'>List of your favorite Recipe</h4>

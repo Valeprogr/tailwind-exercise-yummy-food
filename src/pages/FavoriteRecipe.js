@@ -1,17 +1,13 @@
 import React,{useEffect,useState} from 'react';
 import Spinner from '../components/Spinner';
+import { useAppContext } from '../context';
 
 const FavoriteRecipe = () => {
     const [favoriteRecipes, setFavoriteRecipes] = useState([]);
+    const {recipeData, setRecipeData, esempio} = useAppContext();
+    //console.log(recipeData)
     
 
-    
-    useEffect(() => {
-        const data = localStorage.getItem('recipe');
-        const recipes = JSON.parse(data);
-        setFavoriteRecipes(recipes);
-        
-    }, []);
 
     const removeHandler = (index) => {
         const data =  JSON.parse(localStorage.getItem('recipe'));
@@ -30,8 +26,8 @@ const FavoriteRecipe = () => {
             <hr/> 
             <div className='relative'>
             {
-                favoriteRecipes  ? 
-                    favoriteRecipes.map((ele,index) => (
+                recipeData ? 
+                    recipeData.map((ele,index,) => (
                         <div key={index} className='flex  mt-12 mb-2 bg-white border h-auto w-auto p-4 rounded shadow'>
                             <img className='absolute  rounded-full h-32 w-32  object-cover ' src={ele.img} alt="food" />    
                             <div className='flex flex-col m-8 ml-36'>

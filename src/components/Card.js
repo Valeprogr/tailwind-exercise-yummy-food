@@ -1,6 +1,8 @@
 import React from 'react';
-const Card = ({ props, index, clickHandler}) => {
-    
+import { useAppContext } from '../context';
+
+const Card = ({ props, index }) => {
+    const {recipeData, setRecipeData, esempio, updateState} = useAppContext();
         return (
             <>
                 <div index={index} className='card hover:shadow-lg cursor-pointer'>
@@ -27,7 +29,7 @@ const Card = ({ props, index, clickHandler}) => {
                             hover:bg-opacity-50 transition
                             ease-out duration-300 w-36
                             text-center'
-                            onClick={() => clickHandler({
+                            onClick={() => updateState({
                                 name: props.name,
                                 author: props.author,
                                 time: props.time,
